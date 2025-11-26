@@ -1,0 +1,79 @@
+<section class="contact-form-section" id="contact">
+    <div class="contact-form-container">
+        <h2 style="text-align: center; margin-bottom: 16px;">Get In Touch</h2>
+        <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 32px;">
+            Have a question or want to collaborate? Send me a message!
+        </p>
+
+        <div class="success-message" id="successMessage">
+            ✓ Thank you! Your message has been sent successfully. I'll get back to you soon.
+        </div>
+
+        <form class="contact-form" id="contactForm" method="POST">
+            <div class="form-group">
+                <label for="name" class="form-label">
+                    Name<span class="required">*</span>
+                </label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    class="form-input"
+                    placeholder="Your Full Name"
+                    required
+                    aria-required="true"
+                    aria-describedby="nameError">
+                <span class="error-message" id="nameError">Please enter your name</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">
+                    Email<span class="required">*</span>
+                </label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    class="form-input"
+                    placeholder="your@email.com"
+                    required
+                    aria-required="true"
+                    aria-describedby="emailError">
+                <span class="error-message" id="emailError">Please enter a valid email</span>
+            </div>
+
+            <div class="form-group">
+                <label for="subject" class="form-label">
+                    Subject
+                </label>
+                <input 
+                    type="text" 
+                    id="subject" 
+                    name="subject" 
+                    class="form-input"
+                    placeholder="Subject of your message">
+            </div>
+
+            <div class="form-group">
+                <label for="message" class="form-label">
+                    Message<span class="required">*</span>
+                </label>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    class="form-textarea"
+                    placeholder="Your message here..."
+                    required
+                    aria-required="true"
+                    aria-describedby="messageError"></textarea>
+                <span class="error-message" id="messageError">Message must be at least 10 characters</span>
+            </div>
+
+            <input type="text" name="email2" class="honeypot" tabindex="-1" autocomplete="off">
+
+            <button type="submit" class="btn btn-primary btn-large form-submit">
+                Send Message
+            </button>
+        </form>
+    </div>
+</section>

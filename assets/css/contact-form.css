@@ -1,0 +1,129 @@
+.contact-form-section {
+    padding: 80px 24px;
+    background: var(--color-primary-bg);
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background: var(--color-secondary-bg);
+    border-radius: 12px;
+    padding: 40px;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-medium);
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 8px;
+}
+
+.form-label .required {
+    color: #EF4444;
+    margin-left: 4px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    font-family: var(--font-family);
+    transition: all var(--transition-fast);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: var(--color-text-secondary);
+    opacity: 0.6;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    border-width: 2px;
+    background: rgba(6, 182, 212, 0.05);
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+}
+
+.form-textarea {
+    min-height: 150px;
+    max-height: 300px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.error-message {
+    display: none;
+    color: #EF4444;
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
+
+.error-message.visible {
+    display: block;
+}
+
+.form-input.error,
+.form-textarea.error {
+    border-color: #EF4444;
+}
+
+.honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.form-submit {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.form-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.success-message {
+    display: none;
+    padding: 16px;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 8px;
+    color: #10B981;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.success-message.visible {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 24px;
+    }
+
+    .contact-form-section {
+        padding: 60px 16px;
+    }
+}
