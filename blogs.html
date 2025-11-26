@@ -3,24 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thoughts on research, technology, and academia.">
-    <meta name="author" content="Your Name">
-    <meta name="theme-color" content="#06B6D4">
+    <meta name="description" content="Blog posts and articles by Pranav Pawar on AI/ML research">
+    <title>Blog - Pranav Pawar</title>
 
-    <meta property="og:title" content="Blog - Your Name">
-    <meta property="og:description" content="Thoughts on research, technology, and academia.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://prnvpwr2612.github.io">
-
-    <title>Blog - Your Name</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
 </head>
 <body>
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="index.html" aria-label="Home">Your Name</a>
-            </div>
+    <nav class="navbar" role="navigation">
+        <div class="navbar-container">
+            <a href="index.html" class="nav-brand">Pranav Pawar</a>
             <div class="nav-links">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="publications.html" class="nav-link">Publications</a>
@@ -28,34 +21,53 @@
                 <a href="blogs.html" class="nav-link">Blog</a>
                 <a href="cv.html" class="nav-link">CV</a>
             </div>
+            <button class="mobile-menu-toggle">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
+    <div class="mobile-menu">
+        <div class="mobile-nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="publications.html" class="nav-link">Publications</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="blogs.html" class="nav-link">Blog</a>
+            <a href="cv.html" class="nav-link">CV</a>
+        </div>
+    </div>
+    <div class="mobile-overlay"></div>
 
     <main>
-        
-        <section class="page-header">
-            <div class="container">
-                <h1>Blog</h1>
-                <p>Thoughts on research, technology, and academia</p>
+        <section class="hero" style="min-height: 40vh; display: flex; align-items: center; justify-content: center;">
+            <div class="container" style="text-align: center;">
+                <h1 style="font-size: 2.5rem; color: var(--color-accent);">Blog</h1>
+                <p style="font-size: 1.1rem; color: var(--color-text-secondary);">Thoughts on research, technology, and academia</p>
             </div>
         </section>
 
         <section class="section">
-            <div class="container">
-                <div class="blog-list">
-                    <!-- Blog posts will be loaded dynamically -->
-                </div>
+            <div class="container" style="max-width: 800px;">
+                <article class="card" style="margin-bottom: 32px;">
+                    <h2 style="color: var(--color-accent); margin-bottom: 12px;">Sample Blog Post Title</h2>
+                    <div style="display: flex; gap: 16px; margin-bottom: 16px; color: var(--color-text-secondary); font-size: 0.9rem;">
+                        <span>March 15, 2024</span>
+                        <span>•</span>
+                        <span>5 min read</span>
+                    </div>
+                    <p style="line-height: 1.7; margin-bottom: 16px;">
+                        This is a sample blog post excerpt. It provides a brief overview of what the post is about...
+                    </p>
+                    <a href="#" class="btn btn-secondary btn-small">Read More →</a>
+                </article>
             </div>
         </section>
-        
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-        </div>
+    <footer class="footer" style="background: var(--color-secondary-bg); padding: 40px 24px; text-align: center;">
+        <p style="color: var(--color-text-secondary);">&copy; 2024 Pranav Pawar. All rights reserved.</p>
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/navbar.js"></script>
 </body>
 </html>

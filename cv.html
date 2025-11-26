@@ -3,24 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Curriculum Vitae and Resume.">
-    <meta name="author" content="Your Name">
-    <meta name="theme-color" content="#06B6D4">
+    <meta name="description" content="Curriculum Vitae of Pranav Pawar">
+    <title>CV - Pranav Pawar</title>
 
-    <meta property="og:title" content="CV - Your Name">
-    <meta property="og:description" content="Curriculum Vitae and Resume.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://prnvpwr2612.github.io">
-
-    <title>CV - Your Name</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
 </head>
 <body>
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="index.html" aria-label="Home">Your Name</a>
-            </div>
+    <nav class="navbar" role="navigation">
+        <div class="navbar-container">
+            <a href="index.html" class="nav-brand">Pranav Pawar</a>
             <div class="nav-links">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="publications.html" class="nav-link">Publications</a>
@@ -28,35 +21,110 @@
                 <a href="blogs.html" class="nav-link">Blog</a>
                 <a href="cv.html" class="nav-link">CV</a>
             </div>
+            <button class="mobile-menu-toggle">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
+    <div class="mobile-menu">
+        <div class="mobile-nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="publications.html" class="nav-link">Publications</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="blogs.html" class="nav-link">Blog</a>
+            <a href="cv.html" class="nav-link">CV</a>
+        </div>
+    </div>
+    <div class="mobile-overlay"></div>
 
     <main>
-        
-        <section class="page-header">
-            <div class="container">
-                <h1>Curriculum Vitae</h1>
-                <p>Download my full CV or view below</p>
-                <div class="cta-buttons">
-                    <a href="https://drive.google.com/your-cv-link" target="_blank" class="btn btn-primary">Download CV (PDF)</a>
-                </div>
+        <section class="hero" style="min-height: 40vh; display: flex; align-items: center; justify-content: center;">
+            <div class="container" style="text-align: center;">
+                <h1 style="font-size: 2.5rem; color: var(--color-accent);">Curriculum Vitae</h1>
+                <p style="font-size: 1.1rem; color: var(--color-text-secondary); margin: 24px 0;">
+                    Download my full CV or view below
+                </p>
+                <a href="https://drive.google.com/file/d/YOUR_CV_ID/view" target="_blank" class="btn btn-primary btn-large">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download CV (PDF)
+                </a>
             </div>
         </section>
 
-        <section class="section cv-content">
-            <div class="container">
-                <!-- CV content will be added here -->
+        <section class="section" style="background: white; color: #1A1A1A;">
+            <div class="container" style="max-width: 900px; background: white; padding: 60px 40px; border-radius: 8px;">
+                <header style="border-bottom: 2px solid #06B6D4; padding-bottom: 24px; margin-bottom: 40px;">
+                    <h1 style="font-size: 2.5rem; color: #1A1A1A; margin-bottom: 8px;">Pranav Pawar</h1>
+                    <p style="font-size: 1.1rem; color: #666;">AI/ML Researcher | Computer Science PhD Candidate</p>
+                    <div style="margin-top: 16px; display: flex; gap: 24px; flex-wrap: wrap; font-size: 0.95rem; color: #666;">
+                        <span>📧 your.email@university.edu</span>
+                        <span>🌐 prnvpwr2612.github.io</span>
+                        <span>📍 Stanford, CA</span>
+                    </div>
+                </header>
+
+                <section style="margin-bottom: 40px;">
+                    <h2 style="color: #06B6D4; border-bottom: 1px solid #E5E7EB; padding-bottom: 8px; margin-bottom: 20px;">Education</h2>
+                    <div style="margin-bottom: 24px;">
+                        <h3 style="font-size: 1.2rem; color: #1A1A1A; margin-bottom: 4px;">PhD in Computer Science</h3>
+                        <p style="color: #666; margin-bottom: 8px;">Stanford University | 2021 - Present</p>
+                        <p style="color: #444;">Focus: Machine Learning, Explainable AI</p>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.2rem; color: #1A1A1A; margin-bottom: 4px;">Master of Science in Computer Science</h3>
+                        <p style="color: #666; margin-bottom: 8px;">University Name | 2019 - 2021</p>
+                        <p style="color: #444;">GPA: 3.9/4.0</p>
+                    </div>
+                </section>
+
+                <section style="margin-bottom: 40px;">
+                    <h2 style="color: #06B6D4; border-bottom: 1px solid #E5E7EB; padding-bottom: 8px; margin-bottom: 20px;">Research Experience</h2>
+                    <div style="margin-bottom: 24px;">
+                        <h3 style="font-size: 1.2rem; color: #1A1A1A; margin-bottom: 4px;">Graduate Research Assistant</h3>
+                        <p style="color: #666; margin-bottom: 12px;">Stanford AI Lab | 2021 - Present</p>
+                        <ul style="list-style-position: outside; margin-left: 20px; color: #444; line-height: 1.8;">
+                            <li>Developing novel neural architecture search algorithms</li>
+                            <li>Published 5 papers in top-tier conferences (NeurIPS, ICML)</li>
+                            <li>Collaborating with climate scientists on ML applications</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section style="margin-bottom: 40px;">
+                    <h2 style="color: #06B6D4; border-bottom: 1px solid #E5E7EB; padding-bottom: 8px; margin-bottom: 20px;">Skills</h2>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <h3 style="font-size: 1.1rem; color: #1A1A1A; margin-bottom: 8px;">Programming</h3>
+                            <p style="color: #444;">Python, R, C++, JavaScript</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.1rem; color: #1A1A1A; margin-bottom: 8px;">ML Frameworks</h3>
+                            <p style="color: #444;">PyTorch, TensorFlow, Scikit-learn</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 style="color: #06B6D4; border-bottom: 1px solid #E5E7EB; padding-bottom: 8px; margin-bottom: 20px;">Awards & Honors</h2>
+                    <ul style="list-style-position: outside; margin-left: 20px; color: #444; line-height: 2;">
+                        <li>Best Paper Award, Conference on AI 2024</li>
+                        <li>Graduate Research Fellowship, NSF 2022</li>
+                        <li>Outstanding Student Award 2021</li>
+                    </ul>
+                </section>
             </div>
         </section>
-        
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-        </div>
+    <footer class="footer" style="background: var(--color-secondary-bg); padding: 40px 24px; text-align: center;">
+        <p style="color: var(--color-text-secondary);">&copy; 2024 Pranav Pawar. All rights reserved.</p>
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/navbar.js"></script>
 </body>
 </html>
