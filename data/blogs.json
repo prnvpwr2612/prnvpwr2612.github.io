@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "id": "blog-2024-001",
+      "title": "Sample Blog Post Title",
+      "excerpt": "A brief excerpt of the blog post content...",
+      "date": "2024-03-15",
+      "read_time": 5,
+      "categories": [
+        "Machine Learning",
+        "Research"
+      ],
+      "featured": true
+    }
+  ]
+}

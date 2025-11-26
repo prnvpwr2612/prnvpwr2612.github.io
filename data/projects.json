@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "id": "proj-2024-001",
+      "title": "Sample Project Title",
+      "description": "A sample project description showcasing AI/ML applications.",
+      "thumbnail": "/assets/images/projects/sample-thumb.jpg",
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "React",
+        "Flask"
+      ],
+      "type": "research-tool",
+      "featured": true,
+      "github_url": "https://github.com/yourusername/project",
+      "live_url": "https://project-demo.com"
+    }
+  ]
+}
